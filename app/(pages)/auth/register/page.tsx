@@ -7,9 +7,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 
-interface UserAuthFormProps extends React.HTMLAttributes<HTMLDivElement> {}
 
-const LoginPage = ({ className }: UserAuthFormProps) => {
+const LoginPage = ({ className }: any) => {
   const [isLoading, setIsLoading] = React.useState<boolean>(false);
 
   return (
