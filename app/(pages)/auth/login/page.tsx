@@ -7,7 +7,6 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 
-in
 
 const LoginPage = ({ className }: any) => {
   const [isLoading, setIsLoading] = React.useState<boolean>(false);
