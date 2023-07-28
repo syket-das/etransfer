@@ -3,6 +3,7 @@ import type { Metadata } from 'next';
 import { HeaderComponent } from '@/components/project';
 import { Inter } from 'next/font/google';
 import ClientOnly from '@/components/common/ClientOnly';
+import Footer from '@/components/project/Footer';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -22,6 +23,9 @@ export default function RootLayout({
         <HeaderComponent />
       </ClientOnly>
       <body className={inter.className}>{children}</body>
+      <ClientOnly>
+        <Footer />
+      </ClientOnly>
     </html>
   );
 }

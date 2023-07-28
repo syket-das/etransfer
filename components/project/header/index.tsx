@@ -23,6 +23,7 @@ import {
 
 import { MainNav } from './main-nav';
 import { LoginForm } from '..';
+import RegisterForm from '../RegisterForm';
 
 const HeaderComponent = () => {
   return (
@@ -39,16 +40,17 @@ const HeaderComponent = () => {
         <div className="ml-auto flex items-center gap-4">
           <Dialog>
             <DialogTrigger>
-              <Button variant="ghost">Login now</Button>
+              <Button variant="ghost">Join now</Button>
             </DialogTrigger>
             <DialogContent>
               <DialogHeader>
-                <DialogTitle>Login Here</DialogTitle>
+                <DialogTitle>Register Here</DialogTitle>
                 <DialogDescription>
-                  Enter your credentials to login to your account
+                  Fill the form to create your account and start using E
+                  Transfer
                 </DialogDescription>
               </DialogHeader>
-              <LoginForm />
+              <RegisterForm />
             </DialogContent>
           </Dialog>
 
